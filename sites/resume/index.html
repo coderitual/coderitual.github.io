@@ -1,10 +1,598 @@
 <!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
+
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+
+<html class="not-ie" lang="en">
+<!--<![endif]-->
+    
+<head>
+<meta charset="utf-8">
+<meta name="description" content="description" />
+<meta name="keywords" content="keywords"/>
+<meta name="author" content="BRKOR" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<title>Resume Timeline</title>
+
+<!-- google web font-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+
+<!-- style sheets-->
+<link rel="stylesheet" media="all" href="css/bootstrap.css" type="text/css"/>
+<link rel="stylesheet" media="all" href="css/custom.css" type="text/css"/>
+<link rel="stylesheet" media="all" href="css/dark.css" type="text/css"/>
+
+<!-- main jquery libraries / others are at the bottom-->
+<script src="js/jquery.min.js" type="text/javascript"></script>
+<script src="js/modernizr.js" type="text/javascript"></script>
+
 </head>
-    <body>
-   // in progress
-    </body>
+<body>
+
+<!-- Top icons -->
+<div class="top-icons">
+	<a class="top-menu hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Menu toggle"><span class="glyphicon glyphicon-th-list"></span></a>
+	<a href="#" class="top-download-resume hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Download resume"><span class="glyphicon glyphicon-cloud-download"></span></a>
+	<a class="top-contact hidden-xs hidden-sm" data-toggle="tooltip" data-placement="top" title="Contact me"><span class="glyphicon glyphicon-send"></span></a>
+</div>
+<!-- end Top icons -->
+
+<!-- Navigation -->
+<nav id="spy" class="spy hidden-sm hidden-xs">
+    <ul>
+        <li class="active"><a href="#profile">Profile</a></li>
+        <li><a href="#work-experience">Work experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#professional-skills">Skills</a></li>
+        <li><a href="#interests">Selected Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+<!-- end Navigation -->
+    
+<!-- Navigation for small devices -->
+<nav id="mini-nav" class="spy visible-sm visible-xs">
+    <ul>
+        <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown">Menu</a>
+            <ul class="dropdown-menu">
+                <li class="active"><a href="#profile">Profile</a></li>
+                <li><a href="#work-experience">Work experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#professional-skills">Skills</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </li>
+      </ul>
+</nav>
+<!-- end Navigation for small devices -->
+    
+<!-- Header -->
+<header id="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+                <img src="img/me.jpg" class="face" alt="">
+                <hr class="empty">
+                <p class="header-name">Michał Skowronek</p>
+                <p class="header-title">Javascript and WebGl Programmer</p>
+                <p class="header-subtitle"><b>Hello my name is Michał Skowronek</b> and I'm a Javascript and C# developer from Cracow, Poland. I love UI programming, 3D graphics and well designed stuff. I recently use WebGl as target platform for experiments. </p>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end Header -->
+	
+<!-- Profile -->
+<section id="profile" class="profile activate">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-user"></span>Profile</li>
+                    <li>
+                        <span class="note">Full name</span>
+                        <p><strong>Michał Skowronek</strong></p>
+                    </li>
+                    <li>
+                        <span class="note">Born</span>
+                        <p><strong>03 January 1987</strong></p>
+                        <p><strong>Miechów, Poland</strong></p>
+                    </li>
+                    
+                    <li>
+                        <span class="note">LinkedIn Profile</span>
+                        <p><strong><a href="https://www.linkedin.com/in/coderitual">https://www.linkedin.com/in/coderitual</a></strong></p>
+                    </li>
+                    
+                    <li>
+                        <span class="note">Twitter Profile</span>
+                        <p><strong><a href="https://www.twitter.com/coderitual">https://www.twitter.com/coderitual</a></strong></p>
+                    </li>
+                    <li>
+                        <span class="note">Github Page</span>
+                        <p><strong><a href="https://github.com/coderitual">https://github.com/coderitual</a></strong></p>
+                    </li>
+                    <li>
+                        <span class="note">Website (under construction)</span>
+                        <p><strong><a href="http://www.coderitual.com">https://www.coderitual.com</a></strong></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Profile -->
+
+<!-- Work experience -->
+<section id="work-experience" class="work-experience">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-briefcase"></span>Work experience</li>
+                    <li>
+                        <span class="note">October 2009 - Current</span>
+                        <p><strong>Wind Telecom</strong></p>
+                        <p><strong>Senior Software Architect</strong> in Cracow, Poland</p>
+                        <p class="description">Responsible for creating web based Contact Center Solutions. Asterisk and Media Gateways software specialist.</p>
+                    </li>
+                    <li>
+                        <span class="note">April 2010 - Current</span>
+                        <p><strong>Coderitual</strong></p>
+                        <p><strong>Indie developer</strong> in Cracow, Poland</p>
+                        <p class="description">Creating Desktop and Web based software. Advanced UI and UX solutions. Gamedev.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Work experience -->
+    
+<!-- Education -->
+<section id="education" class="education">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-book"></span>Education</li>
+                    <li>
+                        <span class="note">October 2006 - March 2012</span>
+                        <p><strong>Masters Degree</strong></p>
+                        <p><strong>The Tadeusz Kosciuszko Cracow University of Technology</strong> in Cracow, Poland</p>
+                        <p class="description">Virtual Online Desktop - JavaScript Library</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Education -->
+    
+<!-- Professional skills -->
+<section id="professional-skills" class="professional-skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-tasks"></span>Professional skills</li>
+                    <li>
+                        <p>Javascript<span class="annotation pull-right">95%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Node.js<span class="annotation pull-right">80%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>HTML5, CSS3<span class="annotation pull-right">60%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>WebGl<span class="annotation pull-right">70%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>Angular.js<span class="annotation pull-right">70%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <p>C#<span class="annotation pull-right">80%</span></p>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Professional skills -->
+    
+<!-- Personal skills -->
+<section id="personal-skills" class="personal-skills">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-stats"></span>Personal skills</li>
+                    <li>
+                        <span class="chart" data-percent="95"><span class="skill">Creativity</span>
+                            <span class="percent"></span>
+                        </span>
+                        <span class="chart" data-percent="85"><span class="skill">Social skills</span>
+                            <span class="percent"></span>
+                        </span>
+                        <span class="chart" data-percent="70"><span class="skill">Leadership</span>
+                            <span class="percent"></span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Personal skills -->
+    
+<!-- Interests -->
+<section id="interests" class="interests portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-heart-empty"></span>Selected Projects</li>
+                    <li>
+                        <p><strong>venue.js</strong></p>
+                        <p class="description">Venue.js is 3D JavaScript framework strongly inspired by XNA/Monogame. It is still in development phase.</p>
+                        <p><b>Used technologies: JavaScript, WebGl</b></p>
+                        <p><i>Used libs: webpack, howler, hand.js, gl-matrix</i></p>
+                    </li>
+                    <li>
+                        <p><strong>cr-001</strong></p>
+                        <p class="description">This is small WebGl mobile game. It is kind of like techdemo and is at an early development stage.</p>
+                        <p><b>Used technologies: JavaScript, WebGl</b></p>
+                        <p><i>Used libs: webpack, venue.js</i></p>
+                    </li>
+                    <li>
+                        <p><strong>Dashya Wallboard</strong></p>
+                        <p class="description">Dashya is extensible wallboard system build upon node.js. It was created for using by non technical people with usability in mind</p>
+                        <p><b>Used technologies: JavaScript, Node.js, CSS, Grunt</b></p>
+                        <p><i>Used libs: Angular.js, gridster.js, socket.io, c9/architect.js</i></p>
+                    </li>
+                    <li class="static">
+                        <img src="img/dashya/1.png" alt="" data-toggle="modal" data-target="#modal-dashya-1">
+                        <img src="img/dashya/2.png" alt="" data-toggle="modal" data-target="#modal-dashya-2">
+                        <img src="img/dashya/3.png" alt="" data-toggle="modal" data-target="#modal-dashya-3">
+                        <img src="img/dashya/4.png" alt="" data-toggle="modal" data-target="#modal-dashya-4">
+                        <img src="img/dashya/5.png" alt="" data-toggle="modal" data-target="#modal-dashya-5">
+                    </li>
+                    
+                    <li>
+                        <p><strong>Webchat</strong></p>
+                        <p class="description">Simple node.js webchat system integrated with several contact center systems and instant messaging services</p>
+                        <p><b>Used technologies: JavaScript, CSS, Node.js, Grunt</b></p>
+                        <p><i>Used libs: socket.io</i></p>
+                    </li>
+                     <li class="static">
+                        <img src="img/webchat/1.png" alt="" data-toggle="modal" data-target="#modal-webchat-1">
+                    </li>
+                    <li>
+                        <p><strong>Jtop.js - javascript library</strong></p>
+                        <p class="description">Jtop.js is library which lets you create desktop like interface on the web. </p>
+                        <p><b>Used technologies: JavaScript, SVG, CSS</b></p>
+                        <p><i>Used libs: signals.js, require.js, r.js</i></p>
+                        <span class="note">Demo</span>
+                        <p><strong><a href="https://developer.mozilla.org/pl/demos/detail/jtop-desktop-interface">https://developer.mozilla.org/pl/demos/detail/jtop-desktop-interface</a></strong></p>
+                    </li>
+                    <li class="static">
+                        <img src="img/jtop/1.png" alt="" data-toggle="modal" data-target="#modal-jtop-1">
+                        <img src="img/jtop/2.png" alt="" data-toggle="modal" data-target="#modal-jtop-2">
+                        <img src="img/jtop/3.png" alt="" data-toggle="modal" data-target="#modal-jtop-3">
+                        <img src="img/jtop/4.png" alt="" data-toggle="modal" data-target="#modal-jtop-4">
+                        <img src="img/jtop/5.png" alt="" data-toggle="modal" data-target="#modal-jtop-5">
+                    </li>
+                    <li>
+                        <p><strong>Pridesk.com - portfolio service</strong></p>
+                        <p class="description">2 year project created with my friend Paweł Bród. Pridesk was designed as portfolio web platform for non-graphicians. There was a lot of JavaScript, HTML and CSS. As a back-end was used PHP + MySQL + fast search engine - Sphinx. Jtop.js library was mainly designed for using in this project. 1 year after publishing we decided to close site due to lack of motivation, funds and marketing experience. It was my biggest success and failure at the same time.</p>
+                        <p><b>Used technologies: JavaScript, CSS, PHP, MySQL, Sphinx</b></p>
+                        <p><i>Used libs: jtop.js, site.js</i></p>
+                    </li>
+                    <li class="static">
+                        <img src="img/pridesk/1.png" alt="" data-toggle="modal" data-target="#modal-pridesk-1">
+                        <img src="img/pridesk/2.png" alt="" data-toggle="modal" data-target="#modal-pridesk-2">
+                        <img src="img/pridesk/3.png" alt="" data-toggle="modal" data-target="#modal-pridesk-3">
+                        <img src="img/pridesk/4.png" alt="" data-toggle="modal" data-target="#modal-pridesk-4">
+                        <img src="img/pridesk/5.png" alt="" data-toggle="modal" data-target="#modal-pridesk-5">
+                    </li>
+                    <li>
+                        <p><strong>Phoenix - cms</strong></p>
+                        <p class="description">CMS system developed under Coderitual group. It has plugin architecture so creation of customized componets for clients was really fun.</p>
+                        <p><b>Used technologies: JavaScript, CSS, PHP, MySQL</b></p>
+                        
+                    </li>
+                    <li class="static">
+                        <img src="img/phoenix/1.png" alt="" data-toggle="modal" data-target="#modal-phoenix-1">
+                        <img src="img/phoenix/2.png" alt="" data-toggle="modal" data-target="#modal-phoenix-2">
+                        <img src="img/phoenix/3.png" alt="" data-toggle="modal" data-target="#modal-phoenix-3">
+                        <img src="img/phoenix/5.png" alt="" data-toggle="modal" data-target="#modal-phoenix-4">
+                    </li>
+                     <li>
+                        <p><strong>Ambient Station - 3D demo</strong></p>
+                        <p class="description">3D Demo created using authoring Venue Engine. It's quite old and need to be improved but I still like it. Created under Coderitual group with Paweł Bród (models, textures)</p>
+                        <p><b>Used technologies: C#, SlimDX(DirectX binding), Venue Engine</b></p>
+                         <span class="note">Youtube</span>
+                        <p><strong><a href="https://www.youtube.com/watch?v=MrIvU5dTIDg">https://www.youtube.com/watch?v=MrIvU5dTIDg</a></strong></p>
+                    </li>
+                    <li class="static">
+                        <img src="img/as/1.jpg" alt="" data-toggle="modal" data-target="#modal-as-1">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Interests -->
+    
+<!-- Portfolio -->
+<!--
+<section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-eye-open"></span>Projects Gallery</li>
+                    <li class="static">
+                        <img src="img/jtop/jtop1.png" alt="" data-toggle="modal" data-target="#modal1">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+-->
+<!-- end Portfolio -->
+    
+<!-- Modal - dashya in zoom-->
+<div id="modal-dashya-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/dashya/1.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-dashya-2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/dashya/2.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-dashya-3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/dashya/3.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-dashya-4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/dashya/4.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-dashya-5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/dashya/5.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<!-- end Modal - photos in zoom--> 
+
+<!-- Modal - webchat in zoom-->
+<div id="modal-webchat-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/webchat/1.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+<!-- end Modal - photos in zoom-->
+
+<!-- Modal - jtop in zoom-->
+<div id="modal-jtop-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/jtop/1.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-jtop-2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/jtop/2.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-jtop-3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/jtop/3.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-jtop-4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/jtop/4.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-jtop-5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/jtop/5.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-jtop-6" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/jtop/6.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<!-- end Modal - photos in zoom-->   
+
+<!-- Modal - pridesk in zoom-->
+<div id="modal-pridesk-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/pridesk/1.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-pridesk-2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/pridesk/2.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-pridesk-3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/pridesk/3.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-pridesk-4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/pridesk/4.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-pridesk-5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/pridesk/5.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<!-- end Modal - photos in zoom-->   
+   
+<!-- Modal - phoenix in zoom-->
+<div id="modal-phoenix-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/phoenix/1.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-phoenix-2" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/phoenix/2.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-phoenix-3" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/phoenix/3.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+
+<div id="modal-phoenix-4" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/phoenix/5.png" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+<!-- end Modal - photos in zoom-->
+
+<!-- Modal - as in zoom-->
+<div id="modal-as-1" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal1" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-box">
+            <img src="img/as/1.jpg" alt="" class="img-responsive">
+        </div>
+    </div>
+</div>
+<!-- end Modal - photos in zoom-->
+    
+<!-- Contact -->
+<section id="contact" class="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-7 col-sm-offset-5">
+                <ul>
+                    <li class="title"><span class="glyphicon glyphicon-envelope"></span>Contact</li>
+                    <li class="static">
+                        <span class="note">Address</span>
+                        <p><strong>Cracow, Poland</strong></p>
+                        <span class="note">Mobile</span>
+                        <p><strong>792 190 666</strong></p>
+                        <span class="note">Email</span>
+                        <p><strong><a href="#">skowronkow@gmail.com</a></strong></p>
+                        <hr class="empty">
+                      
+                    </li>
+                    <li class="title up"><span class="glyphicon glyphicon-arrow-up"></span>Up</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Contact -->
+
+<!-- Java Script -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/bootstrap.min.js"></script>
+<script src="js/bootstrap-progressbar.js"></script>
+<script src="js/spy.js"></script>
+<script src="js/scripts.js"></script>
+<!-- Charts -->
+<script src="js/jquery.easypiechart.js"></script>
+<script src="js/chart.js"></script>
+
+</body>
 </html>
